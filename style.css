@@ -9,6 +9,29 @@ body {
 
 #Projects {
   background-color: #d7d7d7;
+  padding-bottom: 0rem; /* Menambah padding bawah agar tidak terlalu mepet dengan SVG */
+}
+
+#Projects .card {
+  height: 100%; /* Memastikan semua kartu memiliki tinggi yang sama */
+  display: flex;
+  flex-direction: column;
+}
+
+#Projects .card img {
+  height: 200px; /* Tinggi gambar yang seragam */
+  object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+}
+
+#Projects .card-body {
+  flex-grow: 1; /* Memastikan body kartu mengisi sisa ruang */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Menempatkan tombol di bagian bawah */
+}
+
+#Projects .card-text {
+  margin-bottom: 1rem; /* Sedikit ruang di bawah deskripsi */
 }
 
 section {
